@@ -39,3 +39,9 @@ Possible representations:
 			- name (string)
 			- surname (string)
 			- visitedEnclosures (list of enclosures refs)
+
+6 - Each object is represented by unique integer identifer. All data is kept in one map string->string. 
+	Representation is a bit similar to 1. but data is accesed as string in that map. Additionally "<fieldname_count>" 
+	like in representation 6. Data is accessed like "<id>.<fieldname>[idx]". So to eg. access name of enclosure 3 use 
+	string "3.name[0]" and to access second animal in that enclosure - "3.animals[1]". To access number of animals in that 
+	enclosure use "3.animals_count" 
